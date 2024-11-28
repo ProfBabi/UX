@@ -1,0 +1,75 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+
+  .portfolio-header {
+    background-color: #002345;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .portfolio-header h1 {
+    margin: 0;
+  }
+  
+ 
+  .about-me {
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+  }
+  
+  .about-me h2 {
+    margin-bottom: 10px;
+    color: #007bff;
+  }
+  
+
+  .projects {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .projects h2 {
+    margin-bottom: 20px;
+    color: #007bff;
+  }
+  
+  .project {
+    background-color: #ffffff;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+  }
+  
+  .project h3 {
+    margin-top: 0;
+  }
+  
+  .project button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .project button:hover {
+    background-color: #0056b3;
+  }
+  
