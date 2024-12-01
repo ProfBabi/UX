@@ -3,9 +3,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    line-height: 1.0;
     background-color: #f9f9f9;
     color: #333;
+    display:flex;
+    flex-direction:column;
+    min-height: 100vh; /* vh toda a altura visível do navegador */
   }
   
 
@@ -14,6 +17,7 @@ body {
     color: white;
     padding: 20px;
     text-align: center;
+    
   }
   
   .portfolio-header h1 {
@@ -22,13 +26,15 @@ body {
   
  
   .about-me {
+  
     padding: 20px;
     text-align: center;
-    background-color: #ffffff;
-    margin: 20px auto;
+    background-color: #ff456788;
+    margin: 70px auto;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
+    max-width:none;
+    width: 80%;
   }
   
   .about-me h2 {
@@ -37,39 +43,52 @@ body {
   }
   
 
-  .projects {
-    padding: 20px;
-    text-align: center;
-  }
+
   
   .projects h2 {
     margin-bottom: 20px;
     color: #007bff;
   }
   
-  .project {
-    background-color: #ffffff;
-    margin: 20px auto;
+  .projects {
+    background-color: #ff456788;
+    text-align:center;
+    margin: 10px auto;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
+  
+    max-width:none;
+    width: 80%;
   }
   
-  .project h3 {
-    margin-top: 0;
-  }
-  
-  .project button {
+
+  button {
     background-color: #007bff;
     color: white;
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    animation: blinking 1s infinite; /* Define a animação */
   }
   
-  .project button:hover {
-    background-color: #0056b3;
+  @keyframes blinking { /* @keyframes define os estados de uma animação */
+     50% {
+        opacity: 0.7; /* Meio transparente */
+    }
   }
+  
+  
+   button:hover {
+    background-color: #0056b3;
+    
+  }
+  footer{
+    margin-top:auto;
+    text-align:center;
+    padding:10px;
+    background-color:#0056;
+  }
+
   
