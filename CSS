@@ -1,15 +1,13 @@
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.0;
-    background-color: #f9f9f9;
-    color: #333;
-    display:flex;
-    flex-direction:column;
-    min-height: 100vh; /* vh toda a altura visível do navegador */
-  }
+  margin: 0;              /* Remove a margem padrão do body */
+  height: 100vh; /* Garante que o body ocupe toda a altura da tela */
+  
+  display: flex;          /* Ativa o Flexbox no body */
+  flex-direction: column; /* Organiza os itens (botões, por exemplo) na direção de coluna */
+  
+  align-items: flex-start; /* Alinha os itens (conteúdo) à esquerda */
+}
   
 
   .portfolio-header {
@@ -17,6 +15,7 @@ body {
     color: white;
     padding: 20px;
     text-align: center;
+    width:100%;
     
   }
   
@@ -61,9 +60,26 @@ body {
     max-width:none;
     width: 80%;
   }
+  #container {
+    display: flex;          /* Usa o Flexbox para alinhar os botões horizontalmente */
+    gap: 10px;              /* Espaçamento entre os botões */
+    margin-top: 20px;       /* Espaçamento superior para dar um pouco de espaço do topo da página */
+    margin-left: 80%;
+  }
   
+  /* Estilo para os botões */
+  #aumentar, #diminuir {
+    width: 100px;               /* Define a largura dos botões */
+    padding: 12px;              /* Define o preenchimento dos botões */
+    border-radius: 50%;         /* Bordas arredondadas */
+    border: none;               /* Remove a borda */
+    background-color: rgba(0, 0, 0, 0.6); /* Cor de fundo */
+    color: white;               /* Cor do texto */
+         
+    cursor: pointer;           /* Deixa o cursor como ponteiro ao passar sobre o botão */
+  }
 
-  button {
+  #botao{
     background-color: #007bff;
     color: white;
     padding: 10px 15px;
@@ -80,15 +96,24 @@ body {
   }
   
   
-   button:hover {
+  #botao:hover {
     background-color: #0056b3;
     
   }
+  .social a {
+    text-decoration: none;
+    margin-right: 15px;
+  }
+
+  
+
+  
   footer{
     margin-top:auto;
     text-align:center;
     padding:10px;
     background-color:#0056;
+    width:100%;
   }
 
   
