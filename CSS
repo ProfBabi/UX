@@ -1,27 +1,107 @@
-
 body {
-  margin: 0;              /* Remove a margem padrão do body */
-  height: 100vh; /* Garante que o body ocupe toda a altura da tela */
-  
-  display: flex;          /* Ativa o Flexbox no body */
-  flex-direction: column; /* Organiza os itens (botões, por exemplo) na direção de coluna */
-  
-  align-items: flex-start; /* Alinha os itens (conteúdo) à esquerda */
+margin: 0;              /* Remove a margem padrão do body */
+height: 200vh; /* Garante que o body ocupe toda a altura da tela */
+display: flex;          /* Ativa o Flexbox no body */
+flex-direction: column; /* Organiza os itens (botões, por exemplo) na direção de coluna */
+align-items: flex-start; /* Alinha os itens (conteúdo) à esquerda */
 }
-  
+.portfolio-header {
+background-color: #1a4672;
+color: white;
+padding: 20px;
+text-align: center;
+width:100%;
+}
+.portfolio-header h1 {
+margin: 0;
+}
+.about-me {
+padding: 20px;
+text-align: center;
+background-color: #ff456788;
+margin: 20px auto;
+border-radius: 10px;
+margin-left: 50%;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+max-width:none;
+width: 50%;
+}
+.about-me h2 {
+margin-bottom: 10px;
+color: #154981;
+}
+.projects h2 {
+margin-bottom: 20px;
+color: #154981;
+}
+.projects {
+background-color: #ff456788;
+text-align:center;
+margin: 5px auto;
+padding: 15px;
+border-radius: 10px;
+margin-left: 50%;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+max-width:none;
+width: 51%;
+}
+#container {
+display: flex;          /* Usa o Flexbox para alinhar os botões horizontalmente */
+gap: 10px;              /* Espaçamento entre os botões */
+margin-top: 20px;       /* Espaçamento superior para dar um pouco de espaço do topo da página */
+margin-left: 80%;
+}
+/* Estilo para os botões */
+#aumentar, #diminuir {
+width: 100px;               /* Define a largura dos botões */
+padding: 12px;              /* Define o preenchimento dos botões */
+border-radius: 50%;         /* Bordas arredondadas */
+border: none;               /* Remove a borda */
+background-color: rgba(0, 0, 0, 0.6); /* Cor de fundo */
+color: white;               /* Cor do texto */
+cursor: pointer;           /* Deixa o cursor como ponteiro ao passar sobre o botão */
+}
+#botao{
+background-color: #007bff;
+color: white;
+padding: 10px 15px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+animation: blinking 1s infinite; /* Define a animação */
+}
+@keyframes blinking { /* @keyframes define os estados de uma animação */
+50% {
+opacity: 0.4; /* Meio transparente */
+}
+}
+#botao:hover {
+background-color: #0056b3;
+}
+.social a {
+/*text-decoration: none; */
+margin-right: 15px;
+color: black;
+}
+.box{
+background-color: #5c6e81;
+padding: 50px;
+width: 80%;
+margin-left:80px;
+margin-top: 15px;
+margin-bottom: 25px;
+border-radius: 5px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+footer{
+margin-top:auto;
+text-align:center;
+padding:10px;
+background-color:#1a4672;
+width:100%;
+}
 
-  .portfolio-header {
-    background-color: #002345;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    width:100%;
-    
-  }
   
-  .portfolio-header h1 {
-    margin: 0;
-  }
   
  
   .about-me {
