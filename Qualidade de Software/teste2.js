@@ -1,4 +1,3 @@
-// Seleciona o contêiner das imagens no carrossel
 const imagensContainer = document.querySelector('.imagens');
 
 // Seleciona todas as imagens dentro do contêiner '.imagens'
