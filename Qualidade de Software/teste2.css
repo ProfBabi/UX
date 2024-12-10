@@ -1,76 +1,63 @@
-/* Estilos Globais */
 body {
-    margin: 0; /* Remove margens padrão do body */
-    padding: 0; /* Remove paddings padrão do body */
-    box-sizing: border-box; /* Garante que bordas e preenchimentos sejam incluídos nas dimensões */
-  }
-  
-  /* Cabeçalho */
-  .portfolio-header {
-    background-color: #002345;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    width: 100%; /* Ocupa toda a largura da tela */
-    margin: 0; /* Remove margens externas */
-    position: relative; /* Mantém a posição padrão do cabeçalho */
-  }
-  
-  .portfolio-header h1 {
-    margin: 0; /* Remove margens do título dentro do cabeçalho */
-  }
-  
-  /* Carrossel */
-  .carrossel {
-    position: relative;
-    width: 400px; /* Largura do carrossel */
-    height: 300px; /* Altura do carrossel */
-    overflow: hidden; /* Esconde o conteúdo que ultrapassa os limites */
-    margin: 12px auto; /* Centraliza o carrossel horizontalmente */
-    border: 2px solid #ccc; /* Borda ao redor do carrossel */
-    border-radius: 10px; /* Arredonda os cantos */
-  }
-  
-  
- /* Estilo para o contêiner de imagens */
+margin: 0; /* Remove margens padrão do body */
+padding: 0; /* Remove paddings padrão do body */
+box-sizing: border-box; /* Garante que bordas e preenchimentos sejam incluídos nas dimensões */
+}
+.header {
+background-color: #002345;
+color: white;
+padding: 20px;
+text-align: center;
+width: 100%; /* Ocupa toda a largura da tela */
+margin: 0; /* Remove margens externas */
+position: relative; /* Mantém a posição padrão do cabeçalho */
+}
+.header h1 {
+margin: 0;
+}
+/* Carrossel */
+.carrossel {
+position: relative;
+width: 400px; /* Largura do carrossel */
+height: 300px; /* Altura do carrossel */
+overflow: hidden; /* Esconde o conteúdo que ultrapassa os limites */
+margin: 12px auto; /* Centraliza o carrossel horizontalmente */
+border: 2px solid #002345; /* Borda ao redor do carrossel */
+border-radius: 10px; 
+}
+/* Estilo para o contêiner de imagens */
 .imagens {
-    display: flex; /* Usa o modelo de layout flexível para alinhar as imagens horizontalmente */
-    transition: transform 0.5s ease-in-out; /* Aplica uma transição suave quando o carrossel é movido */
-  }
-  
-  /* Estilo para as imagens dentro do carrossel */
-  .imagens img {
-    width: 600px; /* Define a largura das imagens para 600px */
-    height: 300px; /* Define a altura das imagens para 300px */
-    object-fit: cover; /* Faz com que as imagens preencham o espaço sem distorcer, cortando parte delas se necessário */
-  }
-  
-  /* Estilo para os botões de navegação */
-  button {
-    position: absolute; /* Posiciona o botão de forma absoluta em relação ao contêiner */
-    top: 55%; /* Alinha o botão verticalmente no meio */
-    transform: translateY(-50%); /* Ajusta o posicionamento para garantir que o botão fique perfeitamente centralizado */
-    background-color: rgba(0, 0, 0, 0.5); /* Define um fundo semi-transparente preto para o botão */
-    color: white; /* Define a cor do texto do botão como branco */
-    border: none; /* Remove as bordas padrão do botão */
-    padding: 10px; /* Define o preenchimento interno do botão */
-    cursor: pointer; /* Exibe o cursor de ponteiro quando o usuário passa o mouse sobre o botão */
-    z-index: 1; /* Garante que o botão apareça acima das imagens */
-    font-size: 10px; /* Define o tamanho da fonte do botão */
-  }
-  
-  /* Estilo específico para o botão "prev" (anterior) */
-  button.prev {
-    left: 5px; /* Posiciona o botão "prev" na parte esquerda do carrossel com um pequeno espaço */
-  }
-  
-  /* Estilo específico para o botão "next" (próximo) */
-  button.next {
-    right: 5px; /* Posiciona o botão "next" na parte direita do carrossel com um pequeno espaço */
-  }
-  
-  /* Estilo para o botão quando o mouse passa sobre ele */
-  button:hover {
-    background-color: rgba(0, 0, 0, 0.8); /* Torna o fundo do botão mais opaco quando o usuário passa o mouse sobre ele */
-  }
-  
+display: flex; /* Usa o modelo de layout flexível para alinhar as imagens horizontalmente */
+transition: transform 0.5s ease-in-out; /* Aplica uma transição suave quando o carrossel é movido */
+}
+/* Estilo para as imagens dentro do carrossel */
+.imagens img {
+width: 600px; /* Define a largura das imagens para 600px */
+height: 300px; /* Define a altura das imagens para 300px */
+object-fit: cover; /* Faz com que as imagens preencham o espaço sem distorcer, cortando parte delas se necessário */
+}
+/* Estilo para os botões de navegação */
+button {
+position: absolute; /* Posiciona o botão de forma absoluta em relação ao contêiner */
+top: 55%; /* Alinha o botão verticalmente no meio */
+transform: translateY(-50%); /* Ajusta o posicionamento para garantir que o botão fique perfeitamente centralizado */
+background-color: rgba(0, 0, 0, 0.5); /* Define um fundo semi-transparente preto para o botão */
+color: white; 
+border: none; /* Remove as bordas padrão do botão */
+padding: 10px; /* Define o preenchimento interno do botão */
+cursor: pointer; /* Exibe o cursor de ponteiro quando o usuário passa o mouse sobre o botão */
+z-index:1; /* Garante que o botão apareça acima das imagens */
+font-size:20px; /* Define o tamanho da fonte do botão */
+}
+/* Estilo específico para o botão "prev" (anterior) */
+button.prev {
+left:5px; /* Posiciona o botão "prev" na parte esquerda do carrossel com um pequeno espaço */
+}
+/* Estilo específico para o botão "next" (próximo) */
+button.next {
+right: 5px; /* Posiciona o botão "next" na parte direita do carrossel com um pequeno espaço */
+}
+/* Estilo para o botão quando o mouse passa sobre ele */
+button:hover {
+background-color: rgba(0, 0, 0, 0.8); /* Torna o fundo do botão mais opaco quando o usuário passa o mouse sobre ele */
+}
